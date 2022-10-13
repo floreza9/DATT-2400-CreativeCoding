@@ -43,9 +43,11 @@ void draw() {
   // increase deg to progress the animation
   deg = deg + 2;
   
-  if (frameCount == 400) {
+  saveFrame("frames/assignment01-######.png");
+  
+  // end the animation after 2000 frames
+  if (frameCount >= 2000) {
     noLoop();
-    saveFrame("line-######.png");
   }
 }
 
